@@ -17,6 +17,8 @@ import 'firebase_options.dart';
 var width;
 var height;
 
+
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -38,6 +40,9 @@ class MyApp extends StatelessWidget {
       onTap: (){
         FocusManager.instance.primaryFocus!.unfocus();
       },
+
+
+
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
